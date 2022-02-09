@@ -68,25 +68,25 @@ console.log(greeting);
 
 // Step 2: 
 
-module.exports = {
-	testGroup: "a",
-	greeting,
-	birthYear,
-	thisYear,
-	firstName,
-	lastName
-}
+//module.exports = {
+//	testGroup: "a",
+//	greeting,
+//	birthYear,
+//	thisYear,
+//	firstName,
+//	lastName
+//}
 
 
 // Step 3: (Be sure to comment out Step 2)
 
-// module.exports = {
-// 	testGroup: "b",
-// 	greeting,
-// 	birthYear,
-// 	thisYear,
-// 	firstName,
-// 	lastName,
-// 	fullName,
-// 	age
-// }
+ module.exports = {
+ 	testGroup: "b",
+ 	greeting,
+ 	birthYear,
+ 	thisYear,
+ 	firstName,
+ 	lastName,
+ 	fullName,
+ 	age
+ }
