@@ -11,6 +11,16 @@
 
     console.log(c)
     //ReferenceError
+
+    function add() {
+      return c;
+    }
+
+    function print() {
+      add();
+    }
+
+    print();
   </script>
 </body>
 </html>
