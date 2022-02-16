@@ -1,5 +1,5 @@
 function computerPlay() {
-	Return randomly Rock, Paper or Scissors
+	Return randomly Rock, Paper or Scissors i.e return random word from list
 }
 
 function singleRound (playerSelection, computerSelection) {
