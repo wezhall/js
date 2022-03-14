@@ -1,5 +1,6 @@
 function computerPlay() {
 	//Return randomly Rock, Paper or Scissors i.e return random word from list
+	const myArray = ['Rock', 'Paper', 'Scissors'];
 }
 
 function singleRound (playerSelection, computerSelection) {
