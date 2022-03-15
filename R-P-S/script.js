@@ -10,45 +10,49 @@ function singleRound (playerSelection, computerSelection) {
 
 	if (playerSelection == 'Rock') {
 		if (computerPlay() == 'Rock') {
-			return ("It's a tie!")
+			return "It's a tie!"
 		}
 
 		else if (computerPlay() == 'Scissors') {
-			return ("You win! Rock beats Scissors!")
+			return "You win! Rock beats Scissors!"
 		}
 
 		else if (computerPlay() == 'Paper') {
-			return ("You lose. Paper beats Rock.")
+			return "You lose. Paper beats Rock."
+		}
+
+		else {
+			return "random"
 		}
 
 	}
 
 	else if (playerSelection == 'Scissors') {
 		if (computerPlay() == 'Rock') {
-			return ("You lose. Rock beats Scissors")
+			return "You lose. Rock beats Scissors"
 		}
 
 		else if (computerPlay() == 'Scissors') {
-			return ("It's a tie!")
+			return "It's a tie!"
 		}
 
 		else if (computerPlay() == 'Paper') {
-			return ("You win! Scissors beats Paper")
+			return "You win! Scissors beats Paper"
 		}
 
 	}
 
 	else if (playerSelection == 'Paper') {
 		if (computerPlay() == 'Rock') {
-			return ("You win! Paper beats Rock")
+			return "You win! Paper beats Rock"
 		}
 
 		else if (computerPlay() == 'Scissors') {
-			return ("You lose. Scissors beats Paper")
+			return "You lose. Scissors beats Paper"
 		}
 
 		else if (computerPlay() == 'Paper') {
-			return ("It's a tie!")
+			return "It's a tie!"
 		}
 
 	}
@@ -59,3 +63,4 @@ const playerSelection = 'Rock';
 const computerSelection = computerPlay();
 
 console.log(singleRound(playerSelection,computerSelection));
+console.log(computerPlay())
