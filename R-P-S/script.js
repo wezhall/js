@@ -5,54 +5,57 @@ function computerPlay() {
 	return myArray[Math.floor(Math.random() * 3)];
 }
 
-function singleRound (playerSelection) {
+function singleRound (playerSelection, computerSelection) {
 	//Return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
 
 	if (playerSelection == 'Rock') {
 		if (computerPlay() == 'Rock') {
-			console.log("It's a tie!")
+			return ("It's a tie!")
 		}
 
 		else if (computerPlay() == 'Scissors') {
-			console.log("You win! Rock beats Scissors!")
+			return ("You win! Rock beats Scissors!")
 		}
 
 		else if (computerPlay() == 'Paper') {
-			console.log("You lose. Paper beats Rock.")
+			return ("You lose. Paper beats Rock.")
 		}
 
 	}
 
 	else if (playerSelection == 'Scissors') {
 		if (computerPlay() == 'Rock') {
-			console.log("You lose. Rock beats Scissors")
+			return ("You lose. Rock beats Scissors")
 		}
 
 		else if (computerPlay() == 'Scissors') {
-			console.log("It's a tie!")
+			return ("It's a tie!")
 		}
 
 		else if (computerPlay() == 'Paper') {
-			console.log("You win! Scissors beats Paper")
+			return ("You win! Scissors beats Paper")
 		}
 
 	}
 
 	else if (playerSelection == 'Paper') {
 		if (computerPlay() == 'Rock') {
-			console.log("You win! Paper beats Rock")
+			return ("You win! Paper beats Rock")
 		}
 
 		else if (computerPlay() == 'Scissors') {
-			console.log("You lose. Scissors beats Paper")
+			return ("You lose. Scissors beats Paper")
 		}
 
 		else if (computerPlay() == 'Paper') {
-			console.log("It's a tie!")
+			return ("It's a tie!")
 		}
 
 	}
 
 }
 
-singleRound('Paper')
+const playerSelection = 'Rock';
+const computerSelection = computerPlay();
+
+console.log(singleRound(playerSelection,computerSelection));
