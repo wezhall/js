@@ -5,7 +5,7 @@ function computerPlay() {
 	return myArray[Math.floor(Math.random() * 3)];
 }
 
-function singleRound (playerSelection, computerPlay) {
+function singleRound (playerSelection) {
 	//Return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
 
 	if (playerSelection == 'Rock') {
@@ -55,4 +55,4 @@ function singleRound (playerSelection, computerPlay) {
 
 }
 
-singleRound()
+console.log(singleRound('Paper'))
