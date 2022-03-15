@@ -10,49 +10,49 @@ function singleRound (playerSelection) {
 
 	if (playerSelection == 'Rock') {
 		if (computerPlay() == 'Rock') {
-			return console.log("It's a tie!")
+			console.log("It's a tie!")
 		}
 
 		else if (computerPlay() == 'Scissors') {
-			return console.log("You win! Rock beats Scissors!")
+			console.log("You win! Rock beats Scissors!")
 		}
 
 		else if (computerPlay() == 'Paper') {
-			return console.log("You lose. Paper beats Rock.")
+			console.log("You lose. Paper beats Rock.")
 		}
 
 	}
 
 	else if (playerSelection == 'Scissors') {
 		if (computerPlay() == 'Rock') {
-			return console.log("You lose. Rock beats Scissors")
+			console.log("You lose. Rock beats Scissors")
 		}
 
 		else if (computerPlay() == 'Scissors') {
-			return console.log("It's a tie!")
+			console.log("It's a tie!")
 		}
 
 		else if (computerPlay() == 'Paper') {
-			return console.log("You win! Scissors beats Paper")
+			console.log("You win! Scissors beats Paper")
 		}
 
 	}
 
 	else if (playerSelection == 'Paper') {
 		if (computerPlay() == 'Rock') {
-			return console.log("You win! Paper beats Rock")
+			console.log("You win! Paper beats Rock")
 		}
 
 		else if (computerPlay() == 'Scissors') {
-			return console.log("You lose. Scissors beats Paper")
+			console.log("You lose. Scissors beats Paper")
 		}
 
 		else if (computerPlay() == 'Paper') {
-			return console.log("It's a tie!")
+			console.log("It's a tie!")
 		}
 
 	}
 
 }
 
-console.log(singleRound('Paper'))
+singleRound('Paper')
