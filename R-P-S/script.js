@@ -5,10 +5,13 @@ function computerPlay() {
 	return myArray[Math.floor(Math.random() * 3)];
 }
 
-function singleRound (playerSelection, computerSelection) {
+function singleRound (playerSelection, computerPlay) {
 	//Return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
 
 	if (playerSelection == 'Rock') {
+		if (computerPlay() == 'Rock') {
+			console.log("It's a tie!")
+		}
 
 	}
 
