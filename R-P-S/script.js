@@ -24,7 +24,18 @@ function singleRound (playerSelection, computerPlay) {
 	}
 
 	else if (playerSelection == 'Scissors') {
-	
+		if (computerPlay() == 'Rock') {
+			console.log("You lose. Rock beats Scissors")
+		}
+
+		else if (computerPlay() == 'Scissors') {
+			console.log("It's a tie!")
+		}
+
+		else if (computerPlay() == 'Paper') {
+			console.log("You win! Scissors beats Paper")
+		}
+
 	}
 
 	else if (playerSelection == 'Paper') {
