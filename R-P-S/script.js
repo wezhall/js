@@ -9,7 +9,17 @@ function singleRound (playerSelection, computerSelection) {
 	//Return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
 
 	if (playerSelection == 'Rock') {
+
+	}
+
+	else if (playerSelection == 'Scissors') {
 	
 	}
+
+	else if (playerSelection == 'Paper') {
+	
+	}
+
+}
 
 console.log(computerPlay())
