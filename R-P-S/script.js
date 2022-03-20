@@ -5,10 +5,12 @@ function computerPlay() {
 	return myArray[Math.floor(Math.random() * 3)];
 }
 
-function singleRound (playerSelection, computerSelection) {
+function singleRound (playerChoice, computerSelection) {
 	//Return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
 
-	if (playerSelection == 'Rock') {
+	var playerSelection = playerChoice.toUpperCase();
+
+	if (playerSelection == 'ROCK') {
 		if (computerPlay() == 'Rock') {
 			return "It's a tie!"
 		}
@@ -27,7 +29,7 @@ function singleRound (playerSelection, computerSelection) {
 
 	}
 
-	else if (playerSelection == 'Scissors') {
+	else if (playerSelection == 'SCISSORS') {
 		if (computerPlay() == 'Rock') {
 			return "You lose. Rock beats Scissors"
 		}
@@ -42,7 +44,7 @@ function singleRound (playerSelection, computerSelection) {
 
 	}
 
-	else if (playerSelection == 'Paper') {
+	else if (playerSelection == 'PAPER') {
 		if (computerPlay() == 'Rock') {
 			return "You win! Paper beats Rock"
 		}
