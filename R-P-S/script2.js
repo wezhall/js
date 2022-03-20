@@ -63,12 +63,13 @@ function singleRound (playerChoice, computerSelection) {
 
 function game() {
 	for (let i = 0; i < 5; i++) {
-		
+		let choice = prompt("Rock, Paper, or Scissors?");
 	}
 }
 
 const playerSelection = 'Rock';
 const computerSelection = computerPlay();
+let sign = prompt("What's your sign?", "Sure");
 
 console.log(singleRound(playerSelection,computerSelection));
 console.log(computerPlay())
