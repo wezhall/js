@@ -64,6 +64,8 @@ function singleRound (playerChoice, computerSelection) {
 function game() {
 	for (let i = 0; i < 5; i++) {
 		let choice = prompt("Rock, Paper, or Scissors?");
+		let computerSelection = computerPlay();
+		singleRound(choice, computerSelection)
 	}
 }
 
