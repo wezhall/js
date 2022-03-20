@@ -61,6 +61,12 @@ function singleRound (playerChoice, computerSelection) {
 
 }
 
+function game() {
+	for (let i = 0; i < 5; i++) {
+		
+	}
+}
+
 const playerSelection = 'Rock';
 const computerSelection = computerPlay();
 
